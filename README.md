@@ -1,4 +1,4 @@
-# DNAconvert tool
+# linebreakreplacer
 This program can convert between different linebreaks of different os files.
 
 
