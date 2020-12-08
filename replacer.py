@@ -189,8 +189,7 @@ def execute(workers):
 def transform(data_dir, input2, loc= None):
     try:
         inputs = generate_inputs(data_dir, input2)
-        if loc is None:
-            loc= os.path.join(data_dir, "file.txt")
+        
         workers = create_workers(inputs, input2, loc)
         return execute(workers)
 
