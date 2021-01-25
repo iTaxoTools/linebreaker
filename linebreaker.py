@@ -49,7 +49,7 @@ class Main(QDialog, Ui_Dialog):
             input_file1= self.lineEdit.text()
             logfile= self.lineEdit_2.text()
             exttype= self.comboBox.currentText()
-            mapreduce(input_file1, exttype, logfile)
+            transform(input_file1, exttype, logfile)
 
         except Exception:
             QMessageBox.warning(self, "Warning", "The file conversion failed")
